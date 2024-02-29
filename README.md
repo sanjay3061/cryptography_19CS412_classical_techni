@@ -1,37 +1,28 @@
-# cryptography_19CS412_classical_techni
-## CEASER CIPHER:
-
-AIM : 
-
-To implement the simple substitution technique named Caesar cipher using C
-language.
+# Cryptography---19CS412-classical-techqniques
 
 
-ALGORITHM :
+# Caeser Cipher
+Caeser Cipher using with different key values
 
-Step 1 : 
+# AIM:
 
-Read the plain text from the user.
+To develop a simple C program to implement Caeser Cipher.
 
-Step 2 :
- Read the key value from the user
+## DESIGN STEPS:
 
-Step 3 :
+### Step 1:
 
-If the key is positive then encrypt the text by adding the key with
-each character in the plain text
+Design of Caeser Cipher algorithnm 
 
-Step 4 :
+### Step 2:
 
-Else subtract the key from the plain text.
+Implementation using C or pyhton code
 
-Step 5 :
+### Step 3:
 
-Display the cipher text obtained above.
+Testing algorithm with different key values. 
 
-
-PROGRAM : 
-
+## PROGRAM:
 ```
 #include<stdio.h>
 #include <string.h>
@@ -70,53 +61,36 @@ printf("%c",plain[i]);
 return 0;
 }
 ```
-OUTPUT :
+## OUTPUT:
+![Screenshot 2024-02-29 180234](https://github.com/sanjay3061/Cryptography---19CS412-classical-techqniques/assets/121215929/e5aae082-5a84-432a-8f5a-3f66391ccf55)
 
-<img width="365" alt="image" src="https://github.com/AlluguriSrikrishnateja/cryptography_19CS412_classical_techniques/assets/118343892/d38dd9a3-4ac3-421b-af80-0240df7aa8c9">
+## RESULT:
+The program is executed successfully
 
+---------------------------------
 
+# PlayFair Cipher
+Playfair Cipher using with different key values
 
-RESULT : 
+# AIM:
 
-Thus the implementation of Caesar cipher had been executed successfully
+To develop a simple C program to implement PlayFair Cipher.
 
+## DESIGN STEPS:
 
-## PLAYFAIR CIPHER: 
+### Step 1:
 
-AIM :
+Design of PlayFair Cipher algorithnm 
 
-To write a C program to implement the Playfair Substitution technique.
+### Step 2:
 
-ALGORITHM :
+Implementation using C or pyhton code
 
-Step 1 :
+### Step 3:
 
-Read the plain text from the user
+Testing algorithm with different key values. 
 
-Step 2 :
-
-Read the keyword from the user 
-
-Step 3 :
-
-Arrange the keyword without duplicates in a 5*5 matrix in the row
- 
-order and fill the remaining cells with missed out letters in
-
-alphabetical order. Note that ‘i’ and ‘j’ takes the same cell. 
-
-Step 4 :
-
-Group the plain text in pairs and match the corresponding corner
-
-letters by forming a rectangular grid.
-
-step 5 :
-
-Display the obtained cipher text
-
-PROGRAM : 
-
+## PROGRAM:
 ```
 #include<stdio.h>
 #include<conio.h>
@@ -243,49 +217,37 @@ i++;
 return 0;
 }
 ```
-OUTPUT :
+## OUTPUT:
+![image](https://github.com/sanjay3061/Cryptography---19CS412-classical-techqniques/assets/121215929/6352d1fa-db3f-4616-b087-ca9506dbfcda)
 
-<img width="356" alt="image" src="https://github.com/AlluguriSrikrishnateja/cryptography_19CS412_classical_techniques/assets/118343892/dc34a668-eaa6-43ef-ad40-c2e971429816">
-
-
-
-RESULT :
- Thus the Playfair cipher substitution technique had been implemented successfully.
+## RESULT:
+The program is executed successfully
 
 
+---------------------------
 
-## HILL CIPHER 
+# Hill Cipher
+Hill Cipher using with different key values
 
-AIM : 
+# AIM:
 
-To write a C program to implement the hill cipher substitution techniques.
+To develop a simple C program to implement Hill Cipher.
 
-ALGORITHM :
+## DESIGN STEPS:
 
-Step 1 :
+### Step 1:
 
-Read the plain text and key from the user.
+Design of Hill Cipher algorithnm 
 
-Step 2 :
+### Step 2:
 
-Split the plain text into groups of length three
+Implementation using C or pyhton code
 
+### Step 3:
 
-Step 3 :
+Testing algorithm with different key values. 
 
-Arrange the keyword in a 3*3 matrix.
-
-Step 4 :
-
-Multiply the two matrices to obtain the cipher text of length three.
-
-Step 5 :
-
-Combine all these groups to get the complete cipher text.
-
-
-PROGRAM :
-
+## PROGRAM:
 ```
 #include<stdio.h>
 #include<conio.h>
@@ -332,68 +294,36 @@ getch();
 return 0;
 }
 ```
+## OUTPUT:
+![Screenshot 2024-02-29 181124](https://github.com/sanjay3061/Cryptography---19CS412-classical-techqniques/assets/121215929/4b655394-b915-41cb-b26e-d34eda805007)
 
-OUTPUT :
+## RESULT:
+The program is executed successfully
 
-<img width="299" alt="image" src="https://github.com/AlluguriSrikrishnateja/cryptography_19CS412_classical_techniques/assets/118343892/d729468c-607b-48cb-b16a-78c6ee4245f2">
+-------------------------------------------------
 
+# Vigenere Cipher
+Vigenere Cipher using with different key values
 
+# AIM:
 
-RESULT :
+To develop a simple C program to implement Vigenere Cipher.
 
- Thus the hill cipher substitution technique had been implemented successfully
+## DESIGN STEPS:
 
+### Step 1:
 
-## Vigenere Cipher 
+Design of Vigenere Cipher algorithnm 
 
+### Step 2:
 
-AIM : 
+Implementation using C or pyhton code
 
-To implement the Vigenere Cipher substitution technique using C program
+### Step 3:
 
+Testing algorithm with different key values. 
 
-ALGORITHM :
-
-Step 1 :
-
-Arrange the alphabets in row and column of a 26*26 matrix
-
-Step 2 : 
-
-Circulate the alphabets in each row to position left such that the first letter
-
-is attached to last.
-
-Step 3 :
-
-Repeat this process for all 26 rows and construct the final key matrix.
-
-Step 4 :
-
-The keyword and the plain text is read from the user.
-
-Step 5 :
-
-The characters in the keyword are repeated sequentially so as to
-
-match with that of the plain text.
-
-Step  6 :
-
- Pick the first letter of the plain text and that of the keyword as the row
- 
-indices and column indices respectively.
-
-Step 7 :
-
-The junction character where these two meet forms the cipher character
-
-Step 8 :
-
-Repeat the above steps to generate the entire cipher text.
-
-PROGRAM :
-
+## PROGRAM:
 ```
 #include <stdio.h>
 #include<conio.h>
@@ -406,9 +336,6 @@ int main()
 int choice;
 while(1)
 {
-printf("\n1. Encrypt Text");
-printf("\n2. Decrypt Text");
-printf("\n3. Exit");
 printf("\n\nEnter Your Choice : ");
 scanf("%d",&choice);
 if(choice == 3)
@@ -460,53 +387,36 @@ printf("%c",65 + (value % 26));
 return 0;
 }
 ```
+## OUTPUT:
+![image](https://github.com/sanjay3061/Cryptography---19CS412-classical-techqniques/assets/121215929/28df34bd-9b1d-4781-a9d0-89b6be2ffcd8)
 
-OUTPUT :
+## RESULT:
+The program is executed successfully
 
-<img width="383" alt="image" src="https://github.com/AlluguriSrikrishnateja/cryptography_19CS412_classical_techniques/assets/118343892/85dfb811-5c60-48fe-be02-504953d0fb47">
+-----------------------------------------------------------------------
 
+# Rail Fence Cipher
+Rail Fence Cipher using with different key values
 
-RESULT :
+# AIM:
 
-Thus , The program is executed perfectly and output is verified.
+To develop a simple C program to implement Rail Fence Cipher.
 
+## DESIGN STEPS:
 
-## Rail Fence Cipher
+### Step 1:
 
-AIM :
+Design of Rail Fence Cipher algorithnm 
 
-To write a C program to implement the rail fence transposition technique.
+### Step 2:
 
+Implementation using C or pyhton code
 
-ALGORRITHM :
+### Step 3:
 
-Step 1 :
+Testing algorithm with different key values. 
 
-Read the Plain text.
-
-
-Step 2 :
-
-Arrange the plain text in row columnar matrix format
-
-Step 3 :
-
-Now read the keyword depending on the number of columns of the plain text
-
-Step 4 :
-
-Arrange the characters of the keyword in sorted order and the
-
-corresponding columns of the plain text.
-
-Step 5 :
-
-Read the characters row wise or column wise in the former order to get the
-
-cipher text.
-
-PROGRAM :
-
+## PROGRAM:
 ```
 #include<stdio.h>
 #include<conio.h>
@@ -519,7 +429,7 @@ printf("\n\t\t RAIL FENCE TECHNIQUE");
 printf("\n\nEnter the input string : ");
 gets(a);
 l=strlen(a);
-/Ciphering/
+
 for(i=0,j=0;i<l;i++)
 {
 if(i%2==0)
@@ -533,7 +443,7 @@ c[j++]=a[i];
 c[j]='\0';
 printf("\nCipher text after applying rail fence :");
 printf("\n%s",c);
-/Deciphering/
+
 if(l%2==0)
 k=l/2;
 else
@@ -554,15 +464,8 @@ printf("%s",d);
 return 0;
 }
 ```
+## OUTPUT:
+![image](https://github.com/sanjay3061/Cryptography---19CS412-classical-techqniques/assets/121215929/f7288e4f-f7bd-489f-ba7d-566c094f23ee)
 
-
-OUTPUT :
-
-<img width="347" alt="image" src="https://github.com/AlluguriSrikrishnateja/cryptography_19CS412_classical_techniques/assets/118343892/2f7866e5-d770-4600-9b0d-41efac2debf9">
-
-
-
-RESULT :
-
-Thus the rail fence algorithm had been executed successfully
-
+## RESULT:
+The program is executed successfully
